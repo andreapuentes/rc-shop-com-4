@@ -33,3 +33,11 @@
         display: none;
     }
 } */
+
+.bgHeader{
+    background: #FFCC98 !important;
+}
+
+.bgFooter{
+    background: #FFE3B3 !important;
+}
