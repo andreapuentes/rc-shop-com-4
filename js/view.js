@@ -124,9 +124,9 @@ const view = (shop => {
             const buttonContainer = createElement('div', false, 'container text-right mb-2', false, false, false,false,false);
             const title1 = createElement('h4', 'title', 'bold', 'Especificaciones',false, false, false, false);
             const rowTitle = createElement('div', false, 'row');
-            const colDescription= createElement('div', false, 'col-9');
-            const colPrice = createElement('div', false, 'col-3');
-            const price = createElement('h3', false, 'card-text price', `Precio: $${prod.price}`);
+            const colDescription= createElement('div', false, 'col-8');
+            const colPrice = createElement('div', false, 'col-4');
+            const price = createElement('h4', false, 'card-text price', `Precio: $${prod.price}`);
             const ul = createElement('ul',false);
             const li1Content = `<h6 class="d-inline"> Pulgadas: </h6> ${prod.features.inches}`;
             const li2Content = `<h6 class="d-inline"> Tipo de pantalla: </h6> ${prod.features.screenType}`;
