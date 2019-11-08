@@ -51,6 +51,7 @@ const view = (shop => {
     const goPage = () => {
         const statusPurchase = localStorage.getItem('finishPurchase');
         if (statusPurchase === '1') {
+            shop.doCheckout();
             location='./index.html';
         }
     } 
@@ -283,10 +284,10 @@ const view = (shop => {
             }
         ];
         const cart_button = document.getElementById('cart_button');
-        const containerDiv = createElement('div', 'containerDiv', 'container h-75', false, false, false, false, false, false);
-        const alertDanger = createElement('div', 'alertDanger', 'alert alert-danger text-center');
-        const alertTitle = createElement('h1', 'alertTitle', false, 'Alerta!!! No has cargado ningún producto');
-        const seeProdBtn = createElement('button', 'seeProdBtn', 'btn btn-primary w-50 align-middle', 'Ver productos', false, false, false, false, false, addEvent1);
+        const containerDiv = createElement('div', 'containerDiv', 'container h-75 my-2', false, false, false, false, false, false);
+        const alertDanger = createElement('div', 'alertDanger', 'alert alert-danger text-center my-2');
+        const alertTitle = createElement('h2', 'alertTitle', false, 'Alerta!!! No has cargado ningún producto');
+        const seeProdBtn = createElement('button', 'seeProdBtn', 'btn btn-danger w-50 align-middle', 'Ver productos', false, false, false, false, false, addEvent1);
         alertDanger.appendChild(alertTitle);
         alertDanger.appendChild(seeProdBtn);
         containerDiv.appendChild(alertDanger);
